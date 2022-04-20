@@ -1,8 +1,8 @@
 <!doctype html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <!--
       The above 2 meta tags *must* come first in the <head> to consistently ensure proper document rendering.
       Any other head elements should come *after* these tags.
@@ -11,94 +11,93 @@
     <!-- This is how you format an HTML comment, by the way. -->
 
     <!-- Link to an external CSS file. -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="modern-normalize.css" />
+    <link rel="stylesheet" href="styles.css" />
 
     <title>Alice's Restaurant</title>
 
   </head>
   <body>
 
-    <header>
-      <nav>
-        <ul>
-          <li><a href="#Menu">Menu</a></li>
-          <li><a href="#Hours">Hours</a></li>
-          <li><a href="#Location">Location</a></li>
-        </ul>
-      </nav>
+    <header class="Landing">
+      <article class="Sign">
+        <h1>ALICE'S RESTAURANT</h1>
+        <p>You can have anything you want.</p>
+      </article>
     </header>
 
-    <div class="Name">
-      <h1>Alice's Restaurant</h1>
-    </div>
+    <section class="testimonials">
+      <article class="testimonial">
+        <img src="images/woman.png" />
+        <p class="name">Emma Goldman</p>
+        <p class="review">The finest meal I ever had.</p>
+      </article>
 
-    <div class="TagLine">
-      <h1> You can have anything you want </h1>
-    </div>
+      <article class="testimonial">
+        <img src="images/woman.png" />
+        <p class="name">Emma Goldman</p>
+        <p class="review">The finest meal I ever had.</p>
+      </article>
 
-    <div class="Logo">
-      <img src="images/table-food.png" alt="Alice's restaurant logo" />
-    </div>
+      <article class="testimonial">
+        <img src="images/woman.png" />
+        <p class="name">Emma Goldman</p>
+        <p class="review">The finest meal I ever had.</p>
+      </article>
+    </section>
 
-    <div class="Hours">
-      <h3>Hours</h3>
-      <p>7AM to 10PM everyday</p>
-    </div>
+    <section class="menu">
+      <h2>MENU</h2>
 
-    <div class="Menu" id="Menu">
-      <ul>
-        <li>Collards 9.99</li>
-        <li>Biscuits 10.99</li>
-        <li>Rice 11.22</li>
-        <li>Beans 2.00</li>
-      </ul>
-    </div>
-
-    <div class="Address" id="Location">
-      <address>
-        1269 88th St NW
-        Just a half mile from the railroad
-        Great Barrington, Massachusetts
-      </address>
-    </div>
-
-    <div class="Testimonials">
-      <ul>
-        <li class="testimonial">
-          <img src="images/woman.png">
-          <p class="name">Malicia Jackson</p>
-          <p>I had a Thanksgiving dinner that couldn't be beat.</p>
+      <ol>
+        <li>
+          <h3>SPECIAL #1: A WORKING WOMAN'S POTATES $5.99</h3>
+          <p>When we say we're brewing a revolution in a pot, we're not kidding! Fried (in olive oil) Idaho potatoes, yams, onions, garlic, peppers, with cheese & grits.</p>
         </li>
-
-        <li class="testimonial">
-          <img src="images/woman.png">
-          <p class="name">Malicia Jackson</p>
-          <p>I had a Thanksgiving dinner that couldn't be beat.</p>
+        <li>
+          <h3>SPECIAL #2: A RICH MAN'S THANKSGIVING $11.99</h3>
+          <p>Throw off your yoke of oppression for a day, and live like a king! Turkey, fresh-baked bread, mashed sweet potatoes, okra, and blackberry pie with ice cream.</p>
         </li>
-
-        <li class="testimonial">
-          <img src="images/woman.png">
-          <p class="name">Malicia Jackson</p>
-          <p>I had a Thanksgiving dinner that couldn't be beat.</p>
+        <li>
+          <h3>SPECIAL #3: THE COLLECTIVE SALAD</h3>
+          <p>Tired of capitalism processing food through you? Try our radical radish, cucumber, kale, arugula, chickpea, and cheddar salad. Topped with farm-fresh egg.</p>
         </li>
-      </ul>
-    </div>
+      </ol>
+    </section>
 
-    <div class="Blog">
-      <a href="https://www.google.com">Blog</a>
-    </div>
+    <section class="information">
+      <article class="location">
+        <h3>Location</h3>
+        <address>
+          1269 88th St NW
+          1/2 mi. from the railroad track
+          Great Barrington Massachusetts
+        </address>
+      </article>
+      <article class="about">
+        <h3>About</h3>
+        <p>Inspired by the Arlo Guthrie song, Alice's has been providing healthy sustenance to and from the local community since 1992.</p>
+      </article>
+    </section>
 
-    <footer>
-      &copy; Alice's Restaurant
+    <section class="contact">
+      <h3>Contact Us</h3>
+
+      <form action="/my-handling-form-page" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="user_name" placeholder="Type Your Name" />
+
+        <label for="mail">Email:</label>
+        <input type="email" id="mail" name="user_mail" placeholder="Type Your Email" />
+
+        <label for="msg">What's Up?</label>
+        <input type="text" id="msg" name="user_message" placeholder="Type Your Message" />
+      </form>
+    </section>
+
+    <footer class="footer">
+      <p><strong>UNITE</strong>FOR GOOD FOOD</p>
     </footer>
-
-        <script>
-          console.log("This will print in the JavaScript console, which is part of the standard suite of developer tools. JavaScript.");
-
-          console.log("Note that we put the script tags right before the closing body tag.")
-
-          console.log ("This should say the tagline" + document.getElementsByClassName("TagLine"));
-        </script>
 
   </body>
 </html>
