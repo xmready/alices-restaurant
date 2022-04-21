@@ -19,8 +19,8 @@
   </head>
   <body>
 
-    <header class="Landing">
-      <article class="Sign">
+    <header class="landing">
+      <article class="sign">
         <h1>ALICE'S RESTAURANT</h1>
         <p>You can have anything you want.</p>
       </article>
@@ -74,6 +74,7 @@
           Great Barrington Massachusetts
         </address>
       </article>
+
       <article class="about">
         <h3>About</h3>
         <p>Inspired by the Arlo Guthrie song, Alice's has been providing healthy sustenance to and from the local community since 1992.</p>
@@ -84,14 +85,20 @@
       <h3>Contact Us</h3>
 
       <form action="/my-handling-form-page" method="post">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="user_name" placeholder="Type Your Name" />
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="user_name" placeholder="Type Your Name" />
+        </div>
 
-        <label for="mail">Email:</label>
-        <input type="email" id="mail" name="user_mail" placeholder="Type Your Email" />
+        <div>
+          <label for="mail">Email:</label>
+          <input type="email" id="mail" name="user_mail" placeholder="Type Your Email" />
+        </div>
 
-        <label for="msg">What's Up?</label>
-        <input type="text" id="msg" name="user_message" placeholder="Type Your Message" />
+        <div>
+          <label for="msg">What's Up?</label>
+          <textarea type="text" id="msg" name="user_message" placeholder="Type Your Message"></textarea>
+        </div>
       </form>
     </section>
 
