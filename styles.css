@@ -1,8 +1,18 @@
+/* Custom Fonts */
+
+@font-face {
+    font-family: 'milkshake';
+    src: url('fonts/milkshake-webfont.woff2') format('woff2'),
+         url('fonts/milkshake-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* General Page Styling */
 
 body {
   text-align: center;
-  font-family: Helvetica;
+  font-family: Helvetica, sans-serif;
 }
 
 .menu,
@@ -39,8 +49,9 @@ body {
 }
 
 .landing p {
-  font-family: "Brush Script MT";
+  font-family: "milkshake";
   font-size: 2em;
+  letter-spacing: 0.1em;
 }
 
 .testimonials {
