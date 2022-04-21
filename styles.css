@@ -33,7 +33,7 @@ body {
 .landing {
   height: 90vh;
   background: center top / cover no-repeat url(images/table-food.png);
-  padding-top: 5em;
+  padding-top: 4em;
 }
 
 .landing .sign {
@@ -41,7 +41,7 @@ body {
   margin-inline: auto;
   background: rgb(0, 0, 0, 0.75);
   color: rgb(255, 255, 255);
-  padding: 1em;
+  padding: 0.5em;
 }
 
 .landing h1 {
@@ -79,7 +79,12 @@ body {
 }
 
 .information {
-  padding: 3em 0;
+  padding: 2em 0;
+}
+
+.information article {
+  width: 60%;
+  margin-inline: auto;
 }
 
 .information p,
