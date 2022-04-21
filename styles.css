@@ -1,0 +1,121 @@
+/* General Page Styling */
+
+body {
+  text-align: center;
+  font-family: Helvetica;
+}
+
+.menu,
+.contact {
+  background: #fff;
+  color: #000;
+}
+
+.testimonials,
+.information,
+.footer {
+  background: #000;
+  color: #fff;
+}
+
+/* Section Styling from Top to Bottom */
+
+.landing {
+  height: 90vh;
+  background: center top / cover no-repeat url(images/table-food.png);
+  padding-top: 5em;
+}
+
+.landing .sign {
+  width: 70%;
+  margin-inline: auto;
+  background: rgb(0, 0, 0, 0.75);
+  color: rgb(255, 255, 255);
+  padding: 1em;
+}
+
+.landing h1 {
+  font-size: 2em;
+}
+
+.landing p {
+  font-family: "Brush Script MT";
+  font-size: 2em;
+}
+
+.testimonials {
+  padding: 3em 0;
+}
+
+.testimonial img {
+  max-width: 40%;
+  border-radius: 100%;
+}
+
+.testimonial .name {
+  font-weight: bold;
+}
+
+.testimonial .review {
+  font-style: italic;
+}
+
+.menu ol {
+  list-style-type: none;
+  width: 80%; 
+  margin-block: 0;
+  margin-inline: auto;
+}
+
+.information {
+  padding: 3em 0;
+}
+
+.information p,
+.information address {
+  text-align: start;
+}
+
+.contact {
+  padding: 3em 0;
+  text-align: center;
+}
+
+.contact h3,
+.contact form {
+  margin-block: 0;
+  margin-inline: auto;
+}
+
+.contact input,
+.contact textarea {
+  border: 3px solid black;
+  margin-block: 0.5em;
+  margin-inline: 0.5em;
+  padding: 0.2em 0.5em;
+}
+
+footer {
+  padding: 3em 0;
+}
+
+/* Wide Display Styling */
+
+@media screen and (min-width: 767px) {
+  .testimonials {
+    display: flex;
+  }
+
+  .testimonial {
+    flex: 1 1;
+  }
+
+  .information {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .information article {
+    width: 30%;
+  }
+}
